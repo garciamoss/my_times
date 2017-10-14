@@ -57,14 +57,14 @@ nav a{
 .column {
 	display: flex;
 	flex-direction: column;
-	border: 1px solid black;
 	margin-right: 32px;
 }
 
 .img-content {
 	border: 1px solid black;
 	display: flex;
-	align-items: center;
+	flex-direction: column;
+	justify-content: center;
 	font-family: Georgia;
 	font-weight: bold;
 	font-size: 30px;
@@ -80,11 +80,6 @@ nav a{
 /*Main Column*/
 .column.large {
 	width: 630px;
-	border: 1px solid black;
-}
-
-.lead-story {
-	border: 1px solid black;
 }
 
 .lead-story .img-content {
@@ -100,20 +95,36 @@ nav a{
 
 .stories {
 	display: flex;
-	flex-direction: column;
-	border: 1px solid black;
+	justify-content: space-between;
 }
 
 .story {
 	border: 1px solid black;
+	display: flex;
+	flex-direction: column;
+	width: 300px;
+}
+
+h2 {
+	font-size: 30px;
 }
 
 .column.large .img-content.one {
 	background-image: url("../images/autumn.png");
+	width: 300px;
+	height: 300px;
+	text-align: center;
+}
+
+.text-only {
+
 }
 
 .column.large .img-content.two {
 	background-image: url("../images/photographer.png");
+	width: 300px;
+	height: 300px;
+	text-align: center;
 }
 
 /*Second Column*/
@@ -124,6 +135,8 @@ nav a{
 
 .column.medium .img-content{
 	background-image: url("../images/catCEO.png");
+	height: 300px;
+	text-align: center;
 }
 
 /*News Bites*/
