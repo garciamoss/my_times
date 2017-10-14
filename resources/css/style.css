@@ -117,7 +117,7 @@ h2 {
 }
 
 .text-only {
-
+	display: inline-block;
 }
 
 .column.large .img-content.two {
